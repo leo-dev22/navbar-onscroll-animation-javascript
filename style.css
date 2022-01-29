@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Calligraffitti&family=Dosis:wght@500&family=Josefin+Slab:wght@100&family=Montserrat:wght@100;500&family=Nova+Round&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Dosis ";
+  background: #eee;
+}
+nav {
+  width: 100%;
+  background: #34bdff;
+  box-shadow: 0 0 5px #333;
+  position: fixed;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-elements {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  height: 10vh;
+  transition: all 0.3s ease-in-out;
+}
+.nav-elements a:visited {
+  color: rgba(165, 42, 42, 0.829);
+}
+.nav-elements h2 {
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.nav-links,
+h2 {
+  flex: 1;
+  color: rgb(240, 14, 14);
+}
+.nav-links li,
+a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 1rem;
+
+  transition: all 0.3s ease-in-out;
+}
+.nav-elements a:hover {
+  font-weight: 300;
+}
+.nav-links li:hover {
+  transform: translateX(3px);
+  font-weight: bold;
+}
+
+main {
+  overflow: hidden;
+}
+
+h1,
+h2,
+a {
+  padding: 1rem;
+  text-transform: capitalize;
+}
+p {
+  text-align: justify;
+  font-size: 1.5rem;
+}
+p::first-letter {
+  font-size: 2.5rem;
+  font-family: "Josefin", cursive;
+  color: rgb(4, 191, 248);
+}
+.adapt {
+  padding: 6rem 1rem 1rem 0;
+  margin-bottom: 3rem;
+}
+.dum-adapt {
+  display: flex;
+  padding: 2rem 2rem 2rem 0;
+  justify-content: center;
+}
+.adapt img {
+  width: 50%;
+  margin-left: 7px;
+  justify-content: center;
+}
+.improvise {
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+.improvise h1 {
+  text-align: right;
+  padding-right: 2rem;
+}
+.improvise img {
+  width: 50%;
+  padding: 2rem;
+  margin-top: -80px;
+}
+.improvise p {
+  text-align: right/justify;
+  justify-content: center;
+}
+.dum-improvise {
+  display: flex;
+}
+
+.overcome {
+  background: rgba(14, 241, 223, 0.739);
+  padding: 2rem;
+}
+.overcome h1 {
+  text-align: center;
+}
+
+.overcome img {
+  width: 60%;
+
+  transform: translateX(40%);
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .nav-elements {
+    width: 75%;
+  }
+}
